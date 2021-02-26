@@ -13,7 +13,7 @@ import com.qa.pages.OtpPage;
 import com.qa.pages.PopUpPage;
 import com.qa.pages.YourDetails;
 
-public class ConnectionAddressTest extends Testbase {
+public class OtpTest extends Testbase {
 	
 	HomePage homepage;
 	BasicInfoPage basicInfoPage;
@@ -24,7 +24,7 @@ public class ConnectionAddressTest extends Testbase {
 	ConnectionAddress connectionAddress;
 	OtpPage otpPage;
 
-	public ConnectionAddressTest()
+	public OtpTest()
 	{
 		super();
 	}
@@ -46,7 +46,6 @@ public class ConnectionAddressTest extends Testbase {
 		   addOnPage=popupPage.validateApplyButton();
 		   yourDetails=addOnPage.validatesubmitAddons();
 		   connectionAddress=yourDetails.validateConnectionAddressBTN();
-		   otpPage=connectionAddress.validateStatusTest();
 		   
 		   
 		 
@@ -54,11 +53,10 @@ public class ConnectionAddressTest extends Testbase {
 	
 	
 	@Test(priority=1)
-	public void validateOtpTest() throws Throwable
+	public void validateConnectionAddressTest() throws Throwable
 	{
 		
-	otpPage.validateOtp();
-	otpPage=otpPage.submitSale();
+	otpPage=connectionAddress.validateStatusTest();
 	  
 	}
 	
