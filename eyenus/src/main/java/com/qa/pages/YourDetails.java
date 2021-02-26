@@ -83,6 +83,10 @@ public class YourDetails extends Testbase {
 			WebElement employment_month;
 	
 			
+			@FindBy(xpath = "//a[contains(@class, 'btn main-btn detail_next')]")
+			WebElement connectionDetailsBTN;
+			
+			
 			
 			//Intilizing The Page Objects
 			public YourDetails() {
@@ -147,6 +151,17 @@ public class YourDetails extends Testbase {
 				System.out.println("passport_number");
 				passport_exp.click();
 				System.out.println("passport_exp");
+			}
+			
+			public ConnectionAddress validateConnectionAddressBTN() throws Throwable
+			{
+				//js.executeScript("arguments[0].scrollIntoView();", connectionDetailsBTN);
+				validateYourDetails();
+				connectionDetails();
+				validateidentificationDetails();
+				validateEmploymentDetails();
+				connectionDetailsBTN.click();
+				return new ConnectionAddress();
 			}
 	
 	//just testing git

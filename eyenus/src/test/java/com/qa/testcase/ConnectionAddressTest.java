@@ -1,6 +1,5 @@
 package com.qa.testcase;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -10,10 +9,11 @@ import com.qa.pages.AddressDetails;
 import com.qa.pages.BasicInfoPage;
 import com.qa.pages.ConnectionAddress;
 import com.qa.pages.HomePage;
+import com.qa.pages.OtpPage;
 import com.qa.pages.PopUpPage;
 import com.qa.pages.YourDetails;
 
-public class YourDetailsTest extends Testbase {
+public class ConnectionAddressTest extends Testbase {
 	
 	HomePage homepage;
 	BasicInfoPage basicInfoPage;
@@ -22,8 +22,9 @@ public class YourDetailsTest extends Testbase {
 	YourDetails yourDetails;
 	AddressDetails addressDetails;
 	ConnectionAddress connectionAddress;
+	OtpPage otpPage;
 
-	public YourDetailsTest()
+	public ConnectionAddressTest()
 	{
 		super();
 	}
@@ -38,33 +39,27 @@ public class YourDetailsTest extends Testbase {
 		   addressDetails= new AddressDetails();
 		   yourDetails=new YourDetails();
 		   connectionAddress= new ConnectionAddress();
+		   otpPage= new OtpPage();
 		   basicInfoPage=homepage.clickBroadbandButton();
 		   popupPage=basicInfoPage.validateNextButton();
 		   popupPage=popupPage.validateCredentials();
 		   addOnPage=popupPage.validateApplyButton();
 		   yourDetails=addOnPage.validatesubmitAddons();
+		   connectionAddress=yourDetails.validateConnectionAddressBTN();
+		   
+		   
 		 
 	   }
 	
 	
 	@Test(priority=1)
-	public void validateYourDetailsTest() throws Throwable
+	public void validateConnectionAddressTest() throws Throwable
 	{
 		
-//		yourDetails.validateYourDetails();
-//		yourDetails.connectionDetails();
-//		yourDetails.validateidentificationDetails();
-		connectionAddress=yourDetails.validateConnectionAddressBTN();
+	otpPage=connectionAddress.validateStatusTest();
 	  
 	}
 	
-	@Test(enabled=false)
-	public void validateConnectionDetailsTest() throws Throwable
-	{
-		yourDetails.validateYourDetails();
-	  
-	}
-//		
 //	@AfterMethod
 //	public void tearDown()
 //	{
