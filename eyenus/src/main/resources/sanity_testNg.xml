@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BroadBand Sanity">
+  <test name="BroadBand Sanity Test Cases">
+      <classes>
+      <class name="com.qa.testcase.HomePageTest"/></classes>
+      <class name="com.qa.testcase.BasicInfoPageTest"/></classes>
+      <class name="com.qa.testcase.PopUpPageTest"/></classes>
+      <class name="com.qa.testcase.AddOnPageTest"/></classes>
+      <class name="com.qa.testcase.YourDetailsTest"/></classes>
+      <class name="com.qa.testcase.ConnectionAddressTest"/></classes>
+      <class name="com.qa.testcase.OtpTest"/></classes>
+  </test> <!-- Test --> 
+  </suite> <!-- Suite -->
