@@ -1,5 +1,6 @@
 package com.qa.testcase;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -46,7 +47,6 @@ public class ConnectionAddressTest extends Testbase {
 		   addOnPage=popupPage.validateApplyButton();
 		   yourDetails=addOnPage.validatesubmitAddons();
 		   connectionAddress=yourDetails.validateConnectionAddressBTN();
-		   otpPage=connectionAddress.validateStatusTest();
 		   
 		   
 		 
@@ -57,16 +57,15 @@ public class ConnectionAddressTest extends Testbase {
 	public void validateOtpTest() throws Throwable
 	{
 		
-	otpPage.validateOtp();
-	otpPage=otpPage.submitSale();
+	otpPage=connectionAddress.validateStatusTest();
 	  
 	}
 	
-//	@AfterMethod
-//	public void tearDown()
-//	{
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	
 
 }

@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.qa.base.Testbase;
 
 public class AddOnsPage extends Testbase {
+	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	@FindBy(xpath = "//div[@class='sub-wrap dotted-area address-screen-adrs-area']")
 	WebElement homeCall;
@@ -17,8 +20,9 @@ public class AddOnsPage extends Testbase {
 	@FindBy(xpath = "//div[@class='ques-wrap dotted-area addon-part']")
 	WebElement otherAddon;
 	
-	@FindBy(xpath = "//strong[contains(text(),'NEW HD ELITE')]")
+	@FindBy(xpath = "//input[@data-name='NEW HD ELITE']")
 	WebElement homecallPlanSelect;
+	
 	@FindBy(xpath = "//label[@for='NeedModem']")
 	WebElement needAmodemCheckBox;
 	
@@ -85,6 +89,7 @@ public class AddOnsPage extends Testbase {
 			
 			public void validateNeedModemCheckBoxChecked()
 			{
+				js.executeScript("arguments[0].scrollIntoView();", needAmodemCheckBox);
 				needAmodemCheckBox.click();
 				modemPlanSelect.click();
 			}
@@ -98,6 +103,7 @@ public class AddOnsPage extends Testbase {
 			{
 				//homeEntertainment.click();
 				//gamePath.click();
+				js.executeScript("arguments[0].scrollIntoView();", fetchMini);
 				fetchMini.click();
 				staticIp.click();
 				fetchMighty.click();

@@ -64,12 +64,12 @@ public class YourDetailsTest extends Testbase {
 		yourDetails.validateYourDetails();
 	  
 	}
-//		
-//	@AfterMethod
-//	public void tearDown()
-//	{
-//		driver.quit();
-//	}
+		
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	
 
 }
