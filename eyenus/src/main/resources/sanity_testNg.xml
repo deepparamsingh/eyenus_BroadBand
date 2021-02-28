@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="BroadBand Sanity">
-  <test name="BroadBand Sanity Test Cases">
-      <classes>
-      <class name="com.qa.testcase.HomePageTest"/></classes>
-      <class name="com.qa.testcase.BasicInfoPageTest"/></classes>
-      <class name="com.qa.testcase.PopUpPageTest"/></classes>
-      <class name="com.qa.testcase.AddOnPageTest"/></classes>
-      <class name="com.qa.testcase.YourDetailsTest"/></classes>
-      <class name="com.qa.testcase.ConnectionAddressTest"/></classes>
-      <class name="com.qa.testcase.OtpTest"/></classes>
-  </test> <!-- Test --> 
-  </suite> <!-- Suite -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <test name="sanityflow">
+    <classes>
+      <class name="com.qa.testcase.HomePageTest"/>
+      <class name="com.qa.testcase.BasicInfoPageTest"/>
+      <class name="com.qa.testcase.PopUpPageTest"/>
+      <class name="com.qa.testcase.AddOnPageTest"/>
+      <class name="com.qa.testcase.YourDetailsTest"/>
+      <class name="com.qa.testcase.ConnectionAddressTest"/>
+      <class name="com.qa.testcase.OtpTest"/>
+    </classes>
+  </test>
+</suite>

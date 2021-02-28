@@ -1,21 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="21" total="29" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56764" started-at="2021-02-28T17:09:15Z" finished-at="2021-02-28T17:10:12Z">
+  <suite name="Suite1" duration-ms="292135" started-at="2021-02-28T17:28:37Z" finished-at="2021-02-28T17:33:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56764" started-at="2021-02-28T17:09:15Z" finished-at="2021-02-28T17:10:12Z">
-      <class name="com.qa.testcase.OtpTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.OtpTest@691a7f8f]" name="setup" is-config="true" duration-ms="52163" started-at="2021-02-28T17:09:15Z" finished-at="2021-02-28T17:10:07Z">
+    <test name="sanityflow" duration-ms="292135" started-at="2021-02-28T17:28:37Z" finished-at="2021-02-28T17:33:29Z">
+      <class name="com.qa.testcase.ConnectionAddressTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.ConnectionAddressTest@1a84f40f]" name="setup" is-config="true" duration-ms="43251" started-at="2021-02-28T17:31:00Z" finished-at="2021-02-28T17:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateConnectionAddressTest()[pri:1, instance:com.qa.testcase.OtpTest@691a7f8f]" name="validateConnectionAddressTest" duration-ms="4554" started-at="2021-02-28T17:10:07Z" finished-at="2021-02-28T17:10:12Z">
+        <test-method status="PASS" signature="validateOtpTest()[pri:1, instance:com.qa.testcase.ConnectionAddressTest@1a84f40f]" name="validateOtpTest" duration-ms="1642" started-at="2021-02-28T17:31:44Z" finished-at="2021-02-28T17:31:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOtpTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.ConnectionAddressTest@1a84f40f]" name="tearDown" is-config="true" duration-ms="844" started-at="2021-02-28T17:31:45Z" finished-at="2021-02-28T17:31:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcase.ConnectionAddressTest -->
+      <class name="com.qa.testcase.AddOnPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.AddOnPageTest@48524010]" name="setup" is-config="true" duration-ms="34307" started-at="2021-02-28T17:29:34Z" finished-at="2021-02-28T17:30:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validatesubmitAddonsTest()[pri:1, instance:com.qa.testcase.AddOnPageTest@48524010]" name="validatesubmitAddonsTest" duration-ms="5680" started-at="2021-02-28T17:30:09Z" finished-at="2021-02-28T17:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesubmitAddonsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.AddOnPageTest@48524010]" name="tearDown" is-config="true" duration-ms="829" started-at="2021-02-28T17:30:14Z" finished-at="2021-02-28T17:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcase.AddOnPageTest -->
+      <class name="com.qa.testcase.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.HomePageTest@53ca01a2]" name="setup" is-config="true" duration-ms="15306" started-at="2021-02-28T17:28:37Z" finished-at="2021-02-28T17:28:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="clickBroadbandButtonTest()[pri:1, instance:com.qa.testcase.HomePageTest@53ca01a2]" name="clickBroadbandButtonTest" duration-ms="3442" started-at="2021-02-28T17:28:53Z" finished-at="2021-02-28T17:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBroadbandButtonTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.HomePageTest@53ca01a2]" name="tearDown" is-config="true" duration-ms="835" started-at="2021-02-28T17:28:56Z" finished-at="2021-02-28T17:28:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcase.HomePageTest -->
+      <class name="com.qa.testcase.OtpTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.OtpTest@23282c25]" name="setup" is-config="true" duration-ms="46057" started-at="2021-02-28T17:31:46Z" finished-at="2021-02-28T17:32:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateConnectionAddressTest()[pri:1, instance:com.qa.testcase.OtpTest@23282c25]" name="validateConnectionAddressTest" duration-ms="4466" started-at="2021-02-28T17:32:32Z" finished-at="2021-02-28T17:32:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateConnectionAddressTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.OtpTest@23282c25]" name="tearDown" is-config="true" duration-ms="812" started-at="2021-02-28T17:32:37Z" finished-at="2021-02-28T17:32:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcase.OtpTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.qa.testcase.BasicInfoPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.BasicInfoPageTest@358c99f5]" name="setup" is-config="true" duration-ms="16142" started-at="2021-02-28T17:32:37Z" finished-at="2021-02-28T17:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateconnectionTypeTest()[pri:2, instance:com.qa.testcase.BasicInfoPageTest@358c99f5]" name="validateconnectionTypeTest" duration-ms="5258" started-at="2021-02-28T17:32:53Z" finished-at="2021-02-28T17:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateconnectionTypeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.BasicInfoPageTest@358c99f5]" name="tearDown" is-config="true" duration-ms="879" started-at="2021-02-28T17:32:59Z" finished-at="2021-02-28T17:33:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.BasicInfoPageTest@358c99f5]" name="setup" is-config="true" duration-ms="23473" started-at="2021-02-28T17:33:00Z" finished-at="2021-02-28T17:33:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validatenextButtonTest()[pri:4, instance:com.qa.testcase.BasicInfoPageTest@358c99f5]" name="validatenextButtonTest" duration-ms="5587" started-at="2021-02-28T17:33:23Z" finished-at="2021-02-28T17:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatenextButtonTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.BasicInfoPageTest@358c99f5]" name="tearDown" is-config="true" duration-ms="802" started-at="2021-02-28T17:33:29Z" finished-at="2021-02-28T17:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcase.BasicInfoPageTest -->
+      <class name="com.qa.testcase.PopUpPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.PopUpPageTest@3ee0fea4]" name="setup" is-config="true" duration-ms="27698" started-at="2021-02-28T17:28:57Z" finished-at="2021-02-28T17:29:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validatePlanTest()[pri:1, instance:com.qa.testcase.PopUpPageTest@3ee0fea4]" name="validatePlanTest" duration-ms="8725" started-at="2021-02-28T17:29:25Z" finished-at="2021-02-28T17:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlanTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.PopUpPageTest@3ee0fea4]" name="tearDown" is-config="true" duration-ms="815" started-at="2021-02-28T17:29:33Z" finished-at="2021-02-28T17:29:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcase.PopUpPageTest -->
+      <class name="com.qa.testcase.YourDetailsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.YourDetailsTest@4b168fa9]" name="setup" is-config="true" duration-ms="35811" started-at="2021-02-28T17:30:15Z" finished-at="2021-02-28T17:30:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateYourDetailsTest()[pri:1, instance:com.qa.testcase.YourDetailsTest@4b168fa9]" name="validateYourDetailsTest" duration-ms="8571" started-at="2021-02-28T17:30:51Z" finished-at="2021-02-28T17:30:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateYourDetailsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcase.YourDetailsTest@4b168fa9]" name="tearDown" is-config="true" duration-ms="845" started-at="2021-02-28T17:30:59Z" finished-at="2021-02-28T17:31:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcase.YourDetailsTest -->
+    </test> <!-- sanityflow -->
+  </suite> <!-- Suite1 -->
 </testng-results>
