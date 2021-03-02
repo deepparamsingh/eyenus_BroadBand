@@ -20,6 +20,11 @@ public class BasicInfoPage extends Testbase {
 	WebElement particularAddress;
 	
 	
+	@FindBy(xpath = "//i[@class='fas fa-times nbn_msg_close']")
+	WebElement ribbonClose;
+	
+	
+	
 	//input[@id='internet_connection_type2']
 //	
 //	@FindBy(xpath = "//select[@id='internet_connection_type']")
@@ -57,6 +62,7 @@ public class BasicInfoPage extends Testbase {
 	{
 		addressAPI.sendKeys("Barangaroo");
 		particularAddress.click();
+		ribbonClose.click();
 		
 		
 	}

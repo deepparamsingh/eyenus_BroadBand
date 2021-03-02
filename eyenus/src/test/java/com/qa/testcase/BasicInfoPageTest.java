@@ -37,11 +37,9 @@ public class BasicInfoPageTest extends Testbase {
 		public void validateAddressApiTest() throws Throwable
 		{
 			basicInfoPage.validateAddressAPI();
-//			String basicInfoTitle=driver.getCurrentUrl();
-//			System.out.println("title---->"+ basicInfoTitle);
 		}
 		
-		@Test(priority=2)
+		@Test(enabled=false)
 		public void validateconnectionTypeTest() throws Throwable
 		{
 			basicInfoPage.validateAddressAPI();
@@ -57,11 +55,10 @@ public class BasicInfoPageTest extends Testbase {
 			
 		}
 		
-		@Test(priority=4)
+		@Test(priority=1)
 		public void validatenextButtonTest() throws Throwable
 		{
-//			basicInfoPage.validateAddressAPI();
-//			basicInfoPage.validateMovecalander();
+
 			popupPage = basicInfoPage.validateNextButton();
 			
 		}

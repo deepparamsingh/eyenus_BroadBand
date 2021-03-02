@@ -3,12 +3,12 @@
 <suite name="Suite1" verbose="1" >
   <test name="sanityflow">
     <classes>
-      <class name="com.qa.testcase.HomePageTest"/>
+     <!--  <class name="com.qa.testcase.HomePageTest"/>
       <class name="com.qa.testcase.BasicInfoPageTest"/>
       <class name="com.qa.testcase.PopUpPageTest"/>
       <class name="com.qa.testcase.AddOnPageTest"/>
       <class name="com.qa.testcase.YourDetailsTest"/>
-      <class name="com.qa.testcase.ConnectionAddressTest"/>
+      <class name="com.qa.testcase.ConnectionAddressTest"/> -->
       <class name="com.qa.testcase.OtpTest"/>
     </classes>
   </test>

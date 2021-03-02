@@ -26,7 +26,7 @@ public class AddOnsPage extends Testbase {
 	@FindBy(xpath = "//label[@for='NeedModem']")
 	WebElement needAmodemCheckBox;
 	
-	@FindBy(xpath = "//strong[contains(text(),'ADSL Modem 3')]")
+	@FindBy(xpath = "//span[contains(text(),'ADSL Modem 3')]")
 	WebElement modemPlanSelect;
 	
 	@FindBy(xpath = "//div[@class='inner-right']")

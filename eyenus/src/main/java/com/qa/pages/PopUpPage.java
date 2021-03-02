@@ -32,6 +32,7 @@ public class PopUpPage extends Testbase {
 		
 		@FindBy(xpath = "//a[@id='462']")
 		WebElement applyButton;
+	
 		
 		@FindBy(xpath = "//div[@class='section sec-one no-border']//p//strong[contains(text(),'Richard NBN Plan double')]")
 		WebElement planName;
